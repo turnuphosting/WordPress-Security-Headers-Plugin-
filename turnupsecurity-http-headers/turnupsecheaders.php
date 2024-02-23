@@ -9,6 +9,11 @@ Author URI: https://turnuphosting.com/web-design/
 License: GPL2
 */
 
+// Exit if accessed directly
+if (!defined('ABSPATH')) {
+	exit;
+}
+
 // Add a menu item under the Settings menu
 add_action('admin_menu', 'http_headers_toggler_menu');
 
